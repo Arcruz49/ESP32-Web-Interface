@@ -3,8 +3,8 @@
 #include <AsyncTCP.h>
 #include <SPIFFS.h>
 
-const char* ssid = "";
-const char* password = "";
+const char* ssid = ""; // configurar o nome do wifi
+const char* password = ""; // configurar a senha do wifi
 
 AsyncWebServer server(80);
 
