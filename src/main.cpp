@@ -74,7 +74,7 @@ void setup()
         html += "const response = await fetch('/login', {";
         html += "method: 'POST',";
         html += "headers: {'Content-Type': 'application/x-www-form-urlencoded',},";
-        html += "body: `userInput=${encodeURIComponent(userInput)}&passwordInput=${encodeURIComponent(passwordInput)}`";  // Corrigido com crase
+        html += "body: `userInput=${encodeURIComponent(userInput)}&passwordInput=${encodeURIComponent(passwordInput)}`";
         html += "});";
         html += "const result = await response.text();";
         html += "alert(result);";
