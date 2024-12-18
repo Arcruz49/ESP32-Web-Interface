@@ -94,7 +94,7 @@ void setup()
         Serial.print("Senha: ");
         Serial.println(passwordInput);
 
-        if (userInput == "admin" && passwordInput == "123") {
+        if (userInput == validUser && passwordInput == validPassword) {
             AsyncWebServerResponse *response = request->beginResponse(200, "text/plain", "Login bem-sucedido!");
 
             // cria cookie de acesso
