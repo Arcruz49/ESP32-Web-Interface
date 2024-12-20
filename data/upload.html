@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height: 100vh;          
+            margin: 0;             
+        }
+        form {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;    
+        }
+        .upload-group {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="upload-group">
+            <input type="file" id="imageUpload" name="image" accept="image/*" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+       
+    </script>
+</body>
+</html>
